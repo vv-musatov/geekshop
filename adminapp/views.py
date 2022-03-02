@@ -206,4 +206,4 @@ def product_is_active_update_productcategory_save(sender, instance, **kwargs):
         else:
             instance.product_set.update(is_active=False)
 
-        db_profile_by_type(sender, "UPDATE", connection.queries)
+        # db_profile_by_type(sender, "UPDATE", connection.queries)
